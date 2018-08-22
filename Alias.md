@@ -26,7 +26,7 @@ currenthash `rev-parse HEAD` Gets the current hash.
 
 discardall `"!git stash save "CHECKPOINT - discardAll"; git stash apply; git checkout -- ."` Creates a checkpoint in stash and discards all that is staged.
 
-checkpoint = `"!git stash save "CHECKPOINT"; git stash apply"` Creates a checkpoint in the stash.
+checkpoint `"!git stash save "CHECKPOINT"; git stash apply"` Creates a checkpoint in the stash.
 
 resetfile `checkout --` Reset a file.
 
