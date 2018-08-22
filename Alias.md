@@ -1,8 +1,8 @@
 # Alias
-To add alias write
+To add alias write:
 `git config --global alias.<Alias Name> <Alias command>`
 
-These aliases is written as:
+These alias is written as:
 <Alias name> `<Alias commad>` <Alias description>
 
 ## General
