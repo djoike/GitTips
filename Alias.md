@@ -19,6 +19,8 @@ rename `!git branch -m` Rename your current branch.
 
 pum `pull upstream master` Pulls upstream master.
 
+stashdiff `!sh -c 'git difftool stash@{$1}' -` See diffs between a stash and current branch exampe use: `git stashdiff 1`.
+
 
 ## Management and status
 
