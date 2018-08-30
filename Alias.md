@@ -21,6 +21,8 @@ pum `pull upstream master` Pulls upstream master.
 
 stashdiff `!sh -c 'git difftool stash@{$1}' -` See diffs between a stash and current branch exampe use: `git stashdiff 1`.
 
+exclude `!sh -c 'echo "$1" >> .git/info/exclude' -`
+
 
 ## Management and status
 
