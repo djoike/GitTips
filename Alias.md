@@ -19,6 +19,10 @@ rename `!git branch -m` Rename your current branch.
 
 pum `pull upstream master` Pulls upstream master.
 
+por `push origin $(git branch-name)` Pushes active branch to origin
+
+cm `checkout master` Checkout master
+
 stashdiff `!sh -c 'git difftool stash@{$1}' -` See diffs between a stash and current branch exampe use: `git stashdiff 1`.
 
 exclude `!sh -c 'echo "$1" >> .git/info/exclude' -` add file to the exclude file
