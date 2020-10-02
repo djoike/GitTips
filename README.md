@@ -1,3 +1,4 @@
+
 # GIT commands
 
 ## Pulling
@@ -44,6 +45,25 @@
 
 `commit -m "{commit message}"`
 
+**Fix when you've committed to master**
+*This fix works only when you haven't pushed to origin*
+
+First step is to create a branch that you will use to hold the commit afterwards.
+`git checkout -b {branch name}`
+
+Then, after creating the branch, go back to the master branch.
+`git checkout master`
+
+Now make sure you have a clean status.
+`git status`
+
+Then find the SHA of the upstream master.
+`git reflog`
+*(press `q` to exit, you only need to look at the first page)*
+
+Finally, reset to the SHA you found (copy it).
+`git reset --hard {sha}`
+
 ## Pushing
 
 **Pushing**
@@ -76,7 +96,7 @@
 
 **Create a new branch from remote**
 
-_Remember it might be necessary to fetch before, if the remote branch is new_
+*Remember it might be necessary to fetch before, if the remote branch is new*
 
 `git checkout -b SUP-12345 djoike/SUP-12345`
 
