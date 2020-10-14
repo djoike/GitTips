@@ -6,7 +6,7 @@ To add alias write:
 
 These alias is written as:
 
-<Alias name> `<Alias commad>` <Alias description>
+<Alias name> `<Alias command>` <Alias description>
 
 
 ## General
